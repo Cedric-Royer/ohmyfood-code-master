@@ -6,6 +6,11 @@
     --main-thrid-color: #99E2D0;
 }
 
+body { 
+    box-sizing: border-box;
+    margin: 0; 
+}
+
 main {
     font-family: 'Roboto';
 }
@@ -22,6 +27,8 @@ button {
     font-size: 16px;
     padding: 0 20px 0 20px;
 }
+
+a {text-decoration: none}
 
 /****** Header ***********/
 
@@ -67,4 +74,30 @@ header{
 footer{
     background-color: #353535;
     color: white;
+    padding-left: 25px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.footer-logo {
+    font-family: "Shrikhand", serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: 'Roboto';   
+}
+
+.footer-list li {
+    padding-bottom: 7px;
+}
+
+.footer-icon {
+    margin-right: 16px;
+    height: 13px;
+    width: 11px;
+    font-size: 14px 
 }
