@@ -1,0 +1,103 @@
+/****** General ***********/
+
+:root{
+    --main-first-color: #9356DC;
+    --main-second-color: #FF79DA;
+    --main-thrid-color: #99E2D0;
+}
+
+body { 
+    box-sizing: border-box;
+    margin: 0; 
+}
+
+main {
+    font-family: 'Roboto';
+}
+
+button {
+    background: linear-gradient(#FF79DA,#9356DC);
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 16px;
+    padding: 0 20px 0 20px;
+}
+
+a {text-decoration: none}
+
+/****** Header ***********/
+
+header{
+    height: 63px;
+    position: relative;
+    font-family: "Shrikhand", serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+.logo-container {
+    position: absolute;  /* Permet de positionner précisément */
+    top: 50%;            /* Centre verticalement */
+    left: 50%;           /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste le positionnement pour centrer précisément */
+}
+
+/****** Location container ***********/
+
+.location-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+/****** Info-group ***********/
+.info-group {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-group hgroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/****** Footer ***********/
+footer{
+    background-color: #353535;
+    color: white;
+    padding-left: 25px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.footer-logo {
+    font-family: "Shrikhand", serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: 'Roboto';   
+}
+
+.footer-list li {
+    padding-bottom: 7px;
+}
+
+.footer-icon {
+    margin-right: 16px;
+    height: 13px;
+    width: 11px;
+    font-size: 14px 
+}
