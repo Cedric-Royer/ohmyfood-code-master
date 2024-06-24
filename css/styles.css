@@ -3,7 +3,7 @@
 :root{
     --main-first-color: #9356DC;
     --main-second-color: #FF79DA;
-    --main-thrid-color: #99E2D0;
+    --main-third-color: #99E2D0;
 }
 
 body { 
@@ -16,7 +16,7 @@ main {
 }
 
 button {
-    background: linear-gradient(#FF79DA,#9356DC);
+    background: linear-gradient(var(--main-second-color),var(--main-first-color));
     height: 50px;
     border-radius: 25px;
     border: none;
@@ -57,6 +57,7 @@ header{
 
 
 /****** Info-group ***********/
+
 .info-group {
     background-color: #F3F3F3;
     display: flex;
@@ -70,7 +71,60 @@ header{
     align-items: center;
 }
 
+/****** Fonctionnement ***********/
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fonctionnement-step {
+    width: 80%;
+    border-radius: 20px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+    position: relative;
+
+}
+
+.fonctionnement .ellipse {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--main-first-color);
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: -15px;
+}
+
+.fonctionnement .ellipse .step-number {
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.step-text {
+    font-size: 16px;
+}
+
+.fonctionnement-step .fa-solid {
+    padding: 20px;
+}
+
+.fa-mobile-screen-button {
+    color: #7E7E7E;
+}
+
+
+
+
 /****** Footer ***********/
+
 footer{
     background-color: #353535;
     color: white;
@@ -100,4 +154,21 @@ footer{
     height: 13px;
     width: 11px;
     font-size: 14px 
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, upper/equal than 768px) */
+
+@media (min-width: 768px) {
+
+
+}
+
+/* Large devices (desktops, upper/equal than 1024px) */
+
+@media (min-width: 1024px) {
+
+
 }
