@@ -149,6 +149,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: left;
+  background-color: #F6F6F6;
 }
 .restaurants__title {
   margin-left: 25px;
