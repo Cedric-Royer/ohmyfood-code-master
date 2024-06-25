@@ -15,63 +15,57 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-        <span>ohmyfood</span>
+    <header class="header">
+        <div class="header__logo-container">
+            <span class="header__logo-text">ohmyfood</span>
         </div>
     </header>
 
-    <main>
-        <div class="location-container">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>Paris, Belleville</span>
+    <main class="main">
+        <div class="location">
+            <i class="location__icon fa-solid fa-location-dot"></i>
+            <span class="location__text">Paris, Belleville</span>
         </div>
-        <section class="info-group">
-           <hgroup>
-            <h1 class="section-title">Réservez le menu qui<br>vous convient</h1>
-            <p>Découvrez des restaurants d’exception,<br>sélectionnés par nos soins.</p>
-           </hgroup>
-           <a href="#restaurants">
-            <button>Explorer nos restaurants</button>
-           </a> 
-           
+        <section class="info">
+            <hgroup class="info__group">
+                <h1 class="info__title">Réservez le menu qui<br>vous convient</h1>
+                <p class="info__description">Découvrez des restaurants d’exception,<br>sélectionnés par nos soins.</p>
+            </hgroup>
+            <a href="#restaurants" class="info__link">
+                <button class="button">Explorer nos restaurants</button>
+            </a>
         </section>
         <section class="fonctionnement">
-            <h2 class="section-title">Fonctionnement</h2>
-            <div class="fonctionnement-step">
-                <div class="ellipse"><span class="step-number">1</span></div>
-                <div class="step-content"></div>
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <span class="step-text">Choisissez un restaurant</span>
+            <h2 class="fonctionnement__title">Fonctionnement</h2>
+            <div class="fonctionnement__step">
+                <div class="fonctionnement__ellipse"><span class="fonctionnement__step-number">1</span></div>
+                <i class="fonctionnement__icon fa-solid fa-mobile-screen-button"></i>
+                <span class="fonctionnement__text">Choisissez un restaurant</span>
             </div>
-            <div class="fonctionnement-step">
-                <div class="ellipse"><span class="step-number">2</span></div>
-                <div class="step-content"></div>
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <span class="step-text">Composez votre menu</span>
+            <div class="fonctionnement__step">
+                <div class="fonctionnement__ellipse"><span class="fonctionnement__step-number">2</span></div>
+                <i class="fonctionnement__icon fa-solid fa-list-ul"></i>
+                <span class="fonctionnement__text">Composez votre menu</span>
             </div>
-            <div class="fonctionnement-step">
-                <div class="ellipse"><span class="step-number">3</span></div>
-                <div class="step-content"></div>
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <span class="step-text">Dégustez au restaurant</span>
-            </div>
+            <div class="fonctionnement__step">
+                <div class="fonctionnement__ellipse"><span class="fonctionnement__step-number">3</span></div>
+                <i class="fonctionnement__icon fa-solid fa-store"></i>
+                <span class="fonctionnement__text">Dégustez au restaurant</span>
+            </div>           
         </section>
-        <section id ="restaurants" class="restaurants">
-            <h2 class="section-title">Restaurants</h2>
-            
+        <section id="restaurants" class="restaurants">
+            <h2 class="restaurants__title">Restaurants</h2>
         </section>
     </main>
 
-    <footer>
-        <span class="footer-logo">ohmyfood</span>
-        <ul class="footer-list">
-            <li><a href="#"></a><i class="fa-solid fa-utensils footer-icon"></i><span>Proposer un restaurant</span></a></li>
-            <li><a href="#"></a><i class="fa-solid fa-handshake-angle footer-icon"></i><span>Devenir partenaire</span></a></li>
-            <li><a href="#"></a><span>Mentions légales</span></a></li>
-            <li><a href="#"></a><span>Contact</span></a></li>
+    <footer class="footer">
+        <span class="footer__logo">ohmyfood</span>
+        <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link"><i class="footer__icon fa-solid fa-utensils"></i><span class="footer__text">Proposer un restaurant</span></a></li>
+            <li class="footer__item"><a href="#" class="footer__link"><i class="footer__icon fa-solid fa-handshake-angle"></i><span class="footer__text">Devenir partenaire</span></a></li>
+            <li class="footer__item"><a href="#" class="footer__link"><span class="footer__text">Mentions légales</span></a></li>
+            <li class="footer__item"><a href="#" class="footer__link"><span class="footer__text">Contact</span></a></li>
         </ul>
-
     </footer>
 
 </body>
