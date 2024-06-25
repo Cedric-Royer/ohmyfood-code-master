@@ -88,10 +88,12 @@ a {
   font-size: 24px;
   margin-top: 30px;
   line-height: 28px;
+  font-weight: 700;
 }
 .info__description {
   margin-top: 0;
   font-size: inherit;
+  font-weight: 300;
 }
 .info__link {
   text-decoration: none;
@@ -199,6 +201,11 @@ a {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, upper/equal than 768px) */
+@media (min-width: 768px) {
+  br {
+    display: none;
+  }
+}
 /* Large devices (desktops, upper/equal than 1024px) */
 
 /*# sourceMappingURL=styles.css.map */

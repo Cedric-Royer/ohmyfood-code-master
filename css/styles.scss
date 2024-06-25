@@ -227,6 +227,9 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, upper/equal than 768px) */
 @media (min-width: 768px) {
+    br {
+        display: none;
+    }
 }
 
 /* Large devices (desktops, upper/equal than 1024px) */
