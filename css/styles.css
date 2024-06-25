@@ -85,7 +85,7 @@ a {
   align-items: center;
 }
 .info__title {
-  font-size: inherit;
+  font-size: 24px;
 }
 .info__description {
   font-size: inherit;
@@ -99,16 +99,14 @@ a {
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 .fonctionnement__title {
-  margin-left: -15px;
+  margin-left: 25px;
   font-size: 24px;
   font-weight: 700;
 }
 .fonctionnement__step {
-  width: 100%;
+  width: 84%;
   border-radius: 20px;
   height: 72px;
   display: flex;
@@ -117,6 +115,8 @@ a {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   margin-bottom: 30px;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 .fonctionnement__ellipse {
   width: 24px;
@@ -149,11 +149,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 .restaurants__title {
-  margin-left: -15px;
+  margin-left: 25px;
   font-size: 24px;
   font-weight: 700;
 }
@@ -173,20 +171,23 @@ a {
   list-style-type: none;
   padding-left: 0;
   font-family: "Roboto";
+  margin-bottom: 0;
 }
-.footer__list__item {
+.footer__list .footer__item {
   padding-bottom: 7px;
 }
-.footer__list__item__link {
+.footer__list .footer__item .footer__link {
   text-decoration: none;
   color: inherit;
+  display: flex;
+  align-items: center;
 }
-.footer__list__item__link__icon {
-  height: 13px;
-  width: 11px;
+.footer__list .footer__item .footer__link .footer__icon {
+  width: 14px;
+  margin-right: 10px;
   font-size: 14px;
 }
-.footer__list__item__link__text {
+.footer__list .footer__item .footer__link .footer__text {
   color: inherit;
 }
 
