@@ -1,0 +1,177 @@
+/****** General ***********/
+
+:root{
+    --main-first-color: #9356DC;
+    --main-second-color: #FF79DA;
+    --main-third-color: #99E2D0;
+}
+
+body { 
+    box-sizing: border-box;
+    margin: 0; 
+}
+
+main {
+    font-family: 'Roboto';
+}
+
+button {
+    background: linear-gradient(var(--main-second-color), var(--main-first-color));
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 16px;
+    padding: 0 20px 0 20px;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+/****** Header ***********/
+
+header {
+    height: 63px;
+    position: relative;
+    font-family: "Shrikhand", serif;
+    font-size: 30px;
+    font-weight: 400;
+
+    .logo-container {
+        position: absolute;  /* Permet de positionner précisément */
+        top: 50%;            /* Centre verticalement */
+        left: 50%;           /* Centre horizontalement */
+        transform: translate(-50%, -50%); /* Ajuste le positionnement pour centrer précisément */
+    }
+}
+
+/****** Location container ***********/
+
+.location-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    height: 50px;
+    gap: 17px;
+}
+
+/****** Info-group ***********/
+
+.info-group {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25px 35px 25px;
+    text-align: center;
+
+    hgroup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/****** Fonctionnement ***********/
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .fonctionnement-step {
+        width: 80%;
+        border-radius: 20px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        background-color: #F6F6F6;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        position: relative;
+
+        .ellipse {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: var(--main-first-color);
+            color: white;
+            text-align: center;
+            position: absolute;
+            left: -15px;
+
+            .step-number {
+                line-height: 24px;
+                font-size: 14px;
+            }
+        }
+
+        .step-text {
+            font-size: 16px;
+        }
+
+        .fa-solid {
+            padding: 20px;
+        }
+
+        .fa-mobile-screen-button {
+            color: #7E7E7E;
+        }
+    }
+}
+
+/****** Footer ***********/
+
+footer {
+    background-color: #353535;
+    color: white;
+    padding-left: 25px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    .footer-logo {
+        font-family: "Shrikhand", serif;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .footer-list {
+        list-style-type: none;
+        padding-left: 0;
+        font-family: 'Roboto';   
+
+        li {
+            padding-bottom: 7px;
+
+            .footer-icon {
+                margin-right: 16px;
+                height: 13px;
+                width: 11px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, upper/equal than 768px) */
+
+@media (min-width: 768px) {
+
+
+}
+
+/* Large devices (desktops, upper/equal than 1024px) */
+
+@media (min-width: 1024px) {
+
+
+}
