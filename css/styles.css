@@ -35,7 +35,7 @@
 
 /* Style pour le cœur coché */
 .heart-checkbox input[type=checkbox]:checked + .heart-icon {
-  fill: #9356DC; /* Couleur de remplissage lorsque la checkbox est cochée */
+  fill: url(#gradient) #9356DC; /* Couleur de remplissage lorsque la checkbox est cochée */
   stroke: none;
 }
 
