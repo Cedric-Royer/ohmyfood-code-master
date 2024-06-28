@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../css/styles.css">    
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../index.html"><i class="fa-solid fa-arrow-left header__back-icon"></i></a>
+        <div class="header__logo-container">
+            <span class="header__logo-text">ohmyfood</span>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <img class="restaurants__card__image" src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image de la table d'un restaurant avec des plats">
+
+        <section class="menu">
+
+            <div class="menu__headline">
+
+                <h1 class="restaurant-name">La palette du goût</h1>
+
+                <div class="checkbox-container">
+                    <label class="heart-checkbox">
+                        <input type="checkbox"/>
+                        <svg class="heart-icon" viewBox="0 0 24 24" fill ="#gradient"xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="-11.44%" stop-color="#9356DC" /> <!-- Couleur de début en haut -->
+                                    <stop offset="123.93%" stop-color="#FF79DA" /> <!-- Couleur de fin en bas -->
+                                  </linearGradient>
+                            </defs>
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </label>    
+                </div>
+            </div>
+
+
+            <div class="menu__items">
+
+                <section class="menu__category">
+
+                    <h2 class="menu__category-title">Entrées</h2>
+
+                    <article class="menu__item">
+                        <span class="menu__item__name">Fricassée d'escargots</span>
+                        <div class="menu__item__details">
+                            <span class="menu__item__description">Au piment d'Espelette</span>
+                            <span class="menu__item__price">25€</span>
+                        </div>
+                    </article>
+
+                    <article class="menu__item">
+                        <span class="menu__item__name">Foie gras de canard mi-cuit</span>
+                        <div class="menu__item__details">
+                            <span class="menu__item__description">Et ses copeaux de truffe noire</span>
+                            <span class="menu__item__price">35€</span>
+                        </div>
+                    </article>
+
+                    <article class="menu__item">
+                        <span class="menu__item__name">Œuf au plat</span>
+                        <div class="menu__item__details">
+                            <span class="menu__item__description">Assaisonné à la truffe sur lit de caviar</span>
+                            <span class="menu__item__price">20€</span>
+                        </div>
+                    </article>
+
+                </section>
+
+                <section class="menu__category">
+
+                    <h2 class="menu__category-title">Plats</h2>
+
+                    <article class="menu__item">
+                        <span class="menu__item__name">Filet de bœuf aux herbes</span>
+                        <div class="menu__item__details">
+                            <span class="menu__item__description">Accompagné de sa flamble de légumes</span>
+                            <span class="menu__item__price">40€</span>
+                        </div>
+                    </article>
+
+                    <article class="menu__item">
+                        <span class="menu__item__name">Parmentier de queue de bœuf</span>
+                        <div class="menu__item__details">
+                            <span class="menu__item__description">À la truffe noire sur sa purée de panais</span>
+                            <span class="menu__item__price">35€</span>
+                        </div>
+                    </article>
+
+                    <article class="menu__item">
+                        <span class="menu__item__name">Filet de turbot</span>
+                        <div class="menu__item__details">
+                            <span class="menu__item__description">Aux agrumes</span>
+                            <span class="menu__item__price">44€</span>
+                        </div>
+                    </article>
+
+                </section>
+
+                <section class="menu__category">
+
+                    <h2 class="menu__category-title">Desserts</h2>
+
+                    <article class="menu__item">
+                        <span class="menu__item__name">Paris-Brest</span>
+                        <div class="menu__item__details">
+                            <span class="menu__item__description">Revisité</span>
+                            <span class="menu__item__price">18€</span>
+                        </div>
+                    </article>
+
+                    <article class="menu__item">
+                        <span class="menu__item__name">Macaron au chocolat d'exception</span>
+                        <div class="menu__item__details">
+                            <span class="menu__item__description">Et glace à la vanille de Madagascar</span>
+                            <span class="menu__item__price">22€</span>
+                        </div>
+                    </article>
+
+                    <article class="menu__item">
+                        <span class="menu__item__name">Mousse au chocolat</span>
+                        <div class="menu__item__details">
+                            <span class="menu__item__description">Au piment d'Espelette et à la truffe noire</span>
+                            <span class="menu__item__price">23€</span>
+                        </div>
+                    </article>
+
+                </section>
+            </div>
+
+           <div class="menu__order">
+                <a href="#">
+                    <button class="button">Commander</button>
+                </a>
+           </div>
+
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+
+        <span class="footer__logo">ohmyfood</span>
+
+        <ul class="footer__list">
+
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                    <i class="footer__icon fa-solid fa-utensils"></i>
+                    <span class="footer__text">Proposer un restaurant</span>
+                </a>
+            </li>
+
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                    <i class="footer__icon fa-solid fa-handshake-angle"></i>
+                    <span class="footer__text">Devenir partenaire</span>
+                </a>
+            </li>
+
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                <span class="footer__text">Mentions légales</span>
+                </a>
+
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                    <span class="footer__text">Contact</span>
+                </a>
+            </li>
+
+        </ul>
+        
+    </footer>
+
+</body>
+
+</html>

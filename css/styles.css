@@ -60,6 +60,7 @@ body {
   color: white;
   font-size: 16px;
   padding: 0 20px;
+  margin: auto;
 }
 .button:hover {
   filter: brightness(1.25);
@@ -70,6 +71,57 @@ a {
   color: inherit;
 }
 
+/****** Restaurants menu ***********/
+.menu {
+  background-color: #F6F6F6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  top: -63px;
+}
+.menu__headline {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  align-items: center;
+}
+.menu__headline .restaurant-name {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+.menu__item {
+  width: 90%;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  height: 69px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 20px;
+  flex-direction: column;
+  padding: 12px 15px 10px 15px;
+  box-sizing: border-box;
+}
+.menu__item__name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  text-align: left;
+}
+.menu__item__details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4px;
+  font-size: 15px;
+}
+.menu__item__details .menu__item__description {
+  font-weight: 300;
+}
+.menu__item__details .menu__item__price {
+  font-weight: 700;
+}
+
 /****** Header ***********/
 .header {
   height: 63px;
@@ -78,6 +130,8 @@ a {
   font-size: 30px;
   font-weight: 400;
   z-index: 1;
+  display: flex;
+  align-items: center;
 }
 .header__logo-container {
   position: absolute;
@@ -87,6 +141,9 @@ a {
 }
 .header__logo-text {
   font-size: inherit;
+}
+.header__back-icon {
+  padding-left: 23px;
 }
 
 /****** Location ***********/
