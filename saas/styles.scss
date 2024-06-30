@@ -36,7 +36,7 @@
 
 /* Style pour le cœur coché */
 .heart-checkbox input[type="checkbox"]:checked + .heart-icon {
-    fill: url(#gradient)  #9356DC; /* Couleur de remplissage lorsque la checkbox est cochée */
+    fill: url(#gradient);
     stroke: none;
 }
 
@@ -46,6 +46,7 @@
 body { 
     box-sizing: border-box;
     margin: 0;
+    min-width: 320px;
 }
 
 .main {
@@ -53,7 +54,8 @@ body {
 }
 
 .button {
-    background: linear-gradient(var(--main-second-color), var(--main-first-color));
+    background: linear-gradient( var(--main-second-color) -11.44%, var(--main-first-color) 123.93%);
+    box-shadow: 0px 4px 4px 0px #00000059;
     height: 50px;
     border-radius: 25px;
     border: none;
@@ -66,9 +68,13 @@ body {
     margin: auto;
 
     &:hover {
-        filter: brightness(1.25);
+        background: linear-gradient(193.33deg, var(--main-second-color) -11.44%, var(--main-first-color) 123.93%),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+        box-shadow: 0px 4px 15px 0px #00000059;
     }
-}
+
+    }
+
 
 a {
     text-decoration: none;
@@ -79,11 +85,11 @@ a {
 
 .menu{
     background-color:#F6F6F6;
-
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     position: relative;
     top: -63px;
+    justify-content: center;
 
     &__headline {
         display: flex;
@@ -95,6 +101,24 @@ a {
             font-family: "Shrikhand", serif;
             font-size: 28px;
             font-weight: 400;
+        }
+    }
+
+    &__category-title {
+        text-transform: uppercase;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        padding-bottom: 5px;
+        width: 90%;
+        margin: auto;
+
+        &__underline {
+            width: 40px;
+            height: 3px;
+            margin-left: 5%;           
+            background-color: var(--main-third-color);
+            margin-bottom: 12px;
         }
     }
 
@@ -134,7 +158,17 @@ a {
         }
     }
 
+    &__order {
+        display: flex;
+        justify-content: center;      
 
+        &__button {
+            width: 186px;
+            margin-top: 15px;
+            margin-bottom: 40px;
+        }
+
+    }
 }
 
 
@@ -157,12 +191,11 @@ a {
         transform: translate(-50%, -50%);
     }
 
-    &__logo-text {
-        font-size: inherit;
-    }
-
     &__back-icon {
         padding-left: 23px;
+        padding-bottom: 15px;
+        font-size: 16px;
+
     }
 }
 
