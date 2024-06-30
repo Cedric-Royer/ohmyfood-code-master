@@ -66,11 +66,14 @@ body {
     font-size: 16px;
     padding: 0 20px;
     margin: auto;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
     &:hover {
-        background: linear-gradient(193.33deg, var(--main-second-color) -11.44%, var(--main-first-color) 123.93%),
+        background-color: linear-gradient(193.33deg, var(--main-second-color) -11.44%, var(--main-first-color) 123.93%),
         linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
         box-shadow: 0px 4px 15px 0px #00000059;
+        opacity: 0.9;
+        transform: translateY(-2px);
     }
 
     }
