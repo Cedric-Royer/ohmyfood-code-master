@@ -10,13 +10,13 @@
 .heart-checkbox {
     display: inline-block;
     position: relative;
-    width: 32px; /* Largeur du conteneur */
-    height: 30px; /* Hauteur du conteneur */
+    width: 32px; 
+    height: 30px; 
     cursor: pointer;
 }
 
 .heart-checkbox input[type="checkbox"] {
-    opacity: 0; /* Rendre la checkbox invisible */
+    opacity: 0; 
     position: absolute;
     top: 0;
     left: 0;
@@ -26,11 +26,10 @@
 }
 
 .heart-icon {
-    width: 100%; /* Taille du cœur */
+    width: 100%; 
     height: 100%;
-    fill: transparent; /* Couleur de remplissage par défaut */
-    stroke: #101010; /* Couleur du contour par défaut */
-    transition: fill 0.3s ease; /* Animation de transition pour le remplissage */
+    fill: transparent; 
+    stroke: #101010; 
 }
 
 
@@ -301,7 +300,6 @@ a {
 .fonctionnement {
     display: flex;
     flex-direction: column;
-    align-items: left;
 
     &__title {
         margin-left: 25px;
@@ -344,7 +342,7 @@ a {
 
     &__icon {
         padding-left: 30px;
-        padding-right: 25px;
+        padding-right: 15px;
         color: #7E7E7E;
     }
 
@@ -458,14 +456,106 @@ a {
 
 
 /****** Media queries ***********/
+
 /* Medium devices (tablets, upper/equal than 768px) */
 @media (min-width: 768px) {
+    
     br {
         display: none;
     }
+
 }
 
 /* Large devices (desktops, upper/equal than 1024px) */
-
 @media (min-width: 1024px) {
+
+    footer {
+        height: 114px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+
+        span.footer__logo {
+            padding-top: 50px;
+            padding-right: 50px;
+            display: flex;
+        }
+
+        ul.footer__list {
+            padding-top: 50px;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: row;
+            margin-right: 40px;
+        }
+
+        li.footer__item {
+            margin-right: 30px;
+        }
+
+
+    }
+
+    .fonctionnement {
+        
+        &__steps {
+            display: flex;
+            flex-direction: row;
+            margin-left: 5%;
+            margin-right: 5%;
+            max-width : 1300px;
+        }
+
+        &__step {
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+    }
+
+    .restaurants {
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        max-width : 1300px;
+        margin: 0 auto;
+
+        }
+
+        &__card{
+        margin-bottom: 40px;
+        max-width : 700px;
+        }
+    }
+
+}
+
+/* Extra Large devices (desktops, upper/equal than 1440px) */
+@media (min-width: 1440px) {
+
+    .section__title {
+            width: 90%;
+            max-width : 1300px;
+            margin: 0px auto 20px auto;
+    }
+
+    .fonctionnement {
+
+        &__steps {
+            width: 90%;
+            max-width : 1300px;
+            margin: 0 auto;
+        }
+
+        &__step {
+            min-width: 360px;
+        }
+
+    }
+
 }
