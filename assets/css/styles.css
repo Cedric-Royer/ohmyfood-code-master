@@ -332,7 +332,6 @@ a {
 .restaurants {
   display: flex;
   flex-direction: column;
-  align-items: left;
   background-color: #F6F6F6;
   gap: 18px;
   padding-top: 50px;
@@ -424,6 +423,11 @@ a {
 }
 /* Large devices (desktops, upper/equal than 1024px) */
 @media (min-width: 1024px) {
+  .section__title {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0px auto 20px auto;
+  }
   footer {
     height: 114px;
     display: flex;
@@ -473,14 +477,8 @@ a {
 }
 /* Extra Large devices (desktops, upper/equal than 1440px) */
 @media (min-width: 1440px) {
-  .section__title {
-    width: 90%;
-    max-width: 1300px;
-    margin: 0px auto 20px auto;
-  }
   .fonctionnement__steps {
     width: 90%;
-    max-width: 1300px;
     margin: 0 auto;
   }
   .fonctionnement__step {
