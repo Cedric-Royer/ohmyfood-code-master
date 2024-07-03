@@ -122,7 +122,7 @@ a {
 
 /****** Restaurants menu ***********/
 .menu-image {
-    max-height: 383px;
+    max-height: 250px;
     object-fit: cover;
     width: 100%;
 }
@@ -473,6 +473,10 @@ a {
         display: none;
     }
 
+    .menu-image {
+        max-height: 300px;
+    }
+
     .menu__headline {
         display: flex;
         justify-content: center;
@@ -491,6 +495,10 @@ a {
 
 /* Large devices (desktops, upper/equal than 1024px) */
 @media (min-width: 1024px) {
+
+    .menu-image {
+        max-height: 383px;
+    }
 
     .section__title {
         width: 90%;
