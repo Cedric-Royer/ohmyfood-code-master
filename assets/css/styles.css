@@ -30,6 +30,7 @@
   height: 100%;
   fill: transparent;
   stroke: #101010;
+  transition: fill 1s ease-in-out;
 }
 
 /* Style pour le cœur coché */
