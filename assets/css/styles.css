@@ -127,13 +127,22 @@ a {
   }
 }
 /****** Restaurants menu ***********/
+.menu-image {
+  max-height: 383px;
+  object-fit: cover;
+  width: 100%;
+}
+
 .menu {
   background-color: #F6F6F6;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   position: relative;
-  top: -63px;
+  top: -40px;
   justify-content: center;
+  max-width: 1055px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .menu__headline {
   display: flex;
@@ -145,6 +154,8 @@ a {
   font-family: "Shrikhand", serif;
   font-size: 28px;
   font-weight: 400;
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 .menu__category-title {
   text-transform: uppercase;
@@ -350,7 +361,7 @@ a {
   background-color: white;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 0 auto 30px auto;
   border-radius: 25px;
 }
 .restaurants__card__image {
@@ -384,6 +395,7 @@ a {
   background-color: #353535;
   color: white;
   padding: 22px 25px;
+  margin-top: -40px;
 }
 .footer__logo {
   font-family: "Shrikhand", serif;
@@ -419,6 +431,15 @@ a {
 @media (min-width: 768px) {
   br {
     display: none;
+  }
+  .menu__headline {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .heart-checkbox {
+    margin-left: 30px;
   }
 }
 /* Large devices (desktops, upper/equal than 1024px) */
