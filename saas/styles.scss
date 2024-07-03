@@ -5,41 +5,6 @@
     --main-third-color: #99E2D0;
 }
 
-/****** heart checkbox ***********/
-
-.heart-checkbox {
-    display: inline-block;
-    position: relative;
-    width: 32px; 
-    height: 30px; 
-    cursor: pointer;
-}
-
-.heart-checkbox input[type="checkbox"] {
-    opacity: 0; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
-.heart-icon {
-    width: 100%; 
-    height: 100%;
-    fill: transparent; 
-    stroke: #101010; 
-    transition: fill 1s ease-in-out;
-}
-
-/* Style pour le cœur coché */
-.heart-checkbox input[type="checkbox"]:checked + .heart-icon {
-    fill: url(#gradient);
-    stroke: none;
-}
-
-
 /****** General ***********/
 body { 
     box-sizing: border-box;
@@ -51,10 +16,56 @@ body {
     font-family: 'Roboto';
 }
 
-
 a {
     text-decoration: none;
     color: inherit;
+}
+
+/****** heart checkbox ***********/
+
+.heart-checkbox {
+    display: inline-block;
+    position: relative;
+    width: 32px; 
+    height: 30px; 
+    cursor: pointer;
+
+    input[type="checkbox"] {
+        opacity: 0; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .heart-icon {
+        width: 100%; 
+        height: 100%;
+
+        .gradient-fill {
+            fill: url(#gradient);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            transition: clip-path 1s ease-in-out;
+            stroke: none;
+        }
+
+        .outline {
+            fill: transparent;
+            stroke: #101010;
+        }
+    }
+
+    input[type="checkbox"]:checked + .heart-icon {
+        .gradient-fill {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .outline {
+            stroke: none;
+        }
+    }
 }
 
 /****** buttons ***********/
@@ -126,7 +137,6 @@ a {
     object-fit: cover;
     width: 100%;
 }
-
 
 .menu{
     background-color:#F6F6F6;
@@ -220,8 +230,6 @@ a {
     }
 }
 
-
-
 /****** Header ***********/
 .header {
     height: 63px;
@@ -270,6 +278,7 @@ a {
 }
 
 /****** Info ***********/
+
 .info {
     background-color: #F6F6F6;
     margin-bottom: 30px;
@@ -306,6 +315,7 @@ a {
 }
 
 /****** Fonctionnement ***********/
+
 .fonctionnement {
     display: flex;
     flex-direction: column;
@@ -362,6 +372,7 @@ a {
 }
 
 /****** Restaurants ***********/
+
 .restaurants {
     display: flex;
     flex-direction: column;
@@ -420,8 +431,8 @@ a {
 
 }
 
-
 /****** Footer ***********/
+
 .footer {
     background-color: #353535;
     color: white;
@@ -463,10 +474,10 @@ a {
     }
 }
 
-
 /****** Media queries ***********/
 
 /* Medium devices (tablets, upper/equal than 768px) */
+
 @media (min-width: 768px) {
     
     br {
@@ -494,6 +505,7 @@ a {
 }
 
 /* Large devices (desktops, upper/equal than 1024px) */
+
 @media (min-width: 1024px) {
 
     .menu-image {
@@ -571,6 +583,7 @@ a {
 }
 
 /* Extra Large devices (desktops, upper/equal than 1440px) */
+
 @media (min-width: 1440px) {
 
     .fonctionnement {
