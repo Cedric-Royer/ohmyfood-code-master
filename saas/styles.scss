@@ -162,6 +162,11 @@ label .menu__item__checkbox:checked ~ .menu__item__details {
 
 }
 
+label .menu__item__checkbox:checked ~ .menu__item__name {
+    max-width: 80%;
+
+}
+
 
 .menu{
     background-color:#F6F6F6;
@@ -293,10 +298,11 @@ label .menu__item__checkbox:checked ~ .menu__item__details {
             font-weight: 500;
             line-height: 21.09px;
             text-align: left;
-            max-width: 75%;
+            max-width: 100%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            transition: max-width 1s ease-in-out 0.2s;
         }
 
         &__selected {
