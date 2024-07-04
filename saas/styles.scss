@@ -134,6 +134,14 @@ a {
 }
 
 /****** Restaurants menu ***********/
+
+
+
+
+
+
+
+
 .menu-image {
     max-height: 250px;
     object-fit: cover;
@@ -165,6 +173,63 @@ label .menu__item__checkbox:checked ~ .menu__item__details {
     max-width: 1055px;
     margin-left: auto;
     margin-right: auto;
+
+/****** Animations items delay ***********/
+
+    #entrees {
+        opacity: 0; 
+        animation: fadeIn 1s forwards 0.5s; 
+    
+        .menu__item__label {
+            @for $i from 1 through 3 {
+                &:nth-of-type(#{$i}) {
+                animation-delay: 0.5 + $i * 0.5s; 
+                }
+            }
+        }
+    }
+
+    #plats{
+        opacity: 0; 
+        animation: fadeIn 1s forwards 2.5s; 
+    
+        .menu__item__label {
+            @for $i from 1 through 3 {
+                &:nth-of-type(#{$i}) {
+                animation-delay: 2.5 + $i * 0.5s; 
+                }
+            }
+        }
+    }
+
+    #desserts {
+        opacity: 0; 
+        animation: fadeIn 1s forwards 4.5s; 
+
+        .menu__item__label {
+            @for $i from 1 through 3 {
+                &:nth-of-type(#{$i}) {
+                animation-delay: 4.5 + $i * 0.5s; 
+                }
+            }
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+    .menu__item__label {
+        opacity: 0;
+        animation: fadeIn 1s forwards; 
+    }
 
     &__headline {
         display: flex;
@@ -228,6 +293,10 @@ label .menu__item__checkbox:checked ~ .menu__item__details {
             font-weight: 500;
             line-height: 21.09px;
             text-align: left;
+            max-width: 75%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         &__selected {
@@ -260,10 +329,14 @@ label .menu__item__checkbox:checked ~ .menu__item__details {
             padding-top: 4px;
             font-size: 15px;
             padding-right: 0;
-            transition: padding-right 1s ease-in-out 0.2s; /* Transition sur padding-right */
+            transition: padding-right 1s ease-in-out 0.2s; 
 
             .menu__item__description {
                 font-weight: 300;
+                max-width: 80%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             .menu__item__price {
