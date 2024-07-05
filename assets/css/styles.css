@@ -23,28 +23,31 @@ a {
 }
 
 /****** heart checkbox ***********/
-.heart-checkbox {
+.checkbox-container {
+  margin-left: auto;
+}
+.checkbox-container .heart-checkbox {
   display: inline-block;
   position: relative;
   width: 32px;
   height: 30px;
   cursor: pointer;
 }
-.heart-checkbox .heart-icon {
+.checkbox-container .heart-checkbox .heart-icon {
   width: 100%;
   height: 100%;
 }
-.heart-checkbox .heart-icon .gradient-fill {
+.checkbox-container .heart-checkbox .heart-icon .gradient-fill {
   fill: url(#gradient);
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
   transition: clip-path 1s ease-in-out;
   stroke: none;
 }
-.heart-checkbox .heart-icon .outline {
+.checkbox-container .heart-checkbox .heart-icon .outline {
   fill: transparent;
   stroke: #101010;
 }
-.heart-checkbox input[type=checkbox] {
+.checkbox-container .heart-checkbox input[type=checkbox] {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -53,10 +56,10 @@ a {
   height: 100%;
   cursor: pointer;
 }
-.heart-checkbox input[type=checkbox]:checked + .heart-icon .gradient-fill {
+.checkbox-container .heart-checkbox input[type=checkbox]:checked + .heart-icon .gradient-fill {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-.heart-checkbox input[type=checkbox]:checked + .heart-icon .outline {
+.checkbox-container .heart-checkbox input[type=checkbox]:checked + .heart-icon .outline {
   stroke: none;
 }
 
@@ -246,6 +249,7 @@ a {
   padding: 12px 15px 10px 15px;
   box-sizing: border-box;
   position: relative;
+  cursor: pointer;
 }
 .menu__item__checkbox {
   display: none;
@@ -399,6 +403,8 @@ a {
   text-decoration: none;
   margin-top: 15px;
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 
 /****** Fonctionnement ***********/
@@ -471,7 +477,6 @@ a {
   width: 90%;
   height: 251px;
   background-color: white;
-  display: flex;
   flex-direction: column;
   margin: 0 auto 30px auto;
   border-radius: 25px;
@@ -507,6 +512,9 @@ a {
   align-items: center;
   padding-left: 15px;
   padding-right: 25px;
+}
+.restaurants__card__content__link {
+  width: 90%;
 }
 .restaurants__card__title {
   margin-top: 10px;
