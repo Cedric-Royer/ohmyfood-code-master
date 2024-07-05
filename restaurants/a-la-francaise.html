@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../assets/css/styles.css"> 
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../index.html"><i class="fa-solid fa-arrow-left header__back-icon"></i></a>
+        <div class="header__logo-container">
+            <span class="header__logo-text">ohmyfood</span>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <img class="menu-image" src="../assets/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image de la table d'un restaurant avec des plats">
+
+        <section class="menu">
+
+            <div class="menu__headline">
+
+                <h1 class="restaurant-name">À la française</h1>
+
+                <div class="checkbox-container">
+                    <label class="heart-checkbox">
+                        <input type="checkbox">
+                        <svg class="heart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#9356DC" /> 
+                                    <stop offset="100%" stop-color="#FF79DA" /> 
+                                </linearGradient>
+                            </defs>
+                            <path class="outline" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            <path class="gradient-fill" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="menu__items">
+
+                <section class="menu__category" id="entrees">
+
+                    <h2 class="menu__category-title">Entrées</h2>
+                    <div class="menu__category-title__underline"></div>
+
+                    <label class="menu__item__label">
+                        <span class="menu__item">
+                            <input type="checkbox" class="menu__item__checkbox">
+                            <span class="menu__item__name">Tartare de poulpe acidulé</span>
+                            <span class="menu__item__details">
+                                <span class="menu__item__description">Aux zestes d'orange</span>
+                                <span class="menu__item__price">25€</span>
+                            </span>     
+                            <span class="menu__item__selected">
+                                <i class="fa-solid fa-circle-check menu__item__selected__icon"></i>
+                            </span>
+                        </span>
+                    </label>               
+
+                    <label class="menu__item__label">
+                        <span class="menu__item">
+                            <input type="checkbox" class="menu__item__checkbox">
+                            <span class="menu__item__name">Velouté de légumes d'antan</span>
+                            <span class="menu__item__details">
+                                <span class="menu__item__description">Carotte, panais, topinambour</span>
+                                <span class="menu__item__price">35€</span>
+                            </span>     
+                            <span class="menu__item__selected">
+                                <i class="fa-solid fa-circle-check menu__item__selected__icon"></i>
+                            </span>
+                        </span>
+                    </label>
+
+                    <label class="menu__item__label">
+                        <span class="menu__item">
+                            <input type="checkbox" class="menu__item__checkbox">
+                            <span class="menu__item__name">Soupe à l'oignon</span>
+                            <span class="menu__item__details">
+                                <span class="menu__item__description">Revisitée</span>
+                                <span class="menu__item__price">20€</span>
+                            </span>
+                            <span class="menu__item__selected">
+                                <i class="fa-solid fa-circle-check menu__item__selected__icon"></i>
+                            </span>
+                        </span>
+                    </label>
+
+                </section>
+
+                <section class="menu__category" id="plats">
+
+                    <h2 class="menu__category-title">Plats</h2>
+                    <div class="menu__category-title__underline"></div>
+
+                    <label class="menu__item__label">
+                        <span class="menu__item">
+                            <input type="checkbox" class="menu__item__checkbox">
+                            <span class="menu__item__name">Coquilles Saint-Jacques</span>
+                            <span class="menu__item__details">
+                                <span class="menu__item__description">Accompagnées d'une purée de panais</span>
+                                <span class="menu__item__price">40€</span>
+                            </span>
+                            <span class="menu__item__selected">
+                                <i class="fa-solid fa-circle-check menu__item__selected__icon"></i>
+                            </span>
+                        </span>
+                    </label>
+
+                    <label class="menu__item__label">
+                        <span class="menu__item">
+                            <input type="checkbox" class="menu__item__checkbox">
+                            <span class="menu__item__name">Magret de canard</span>
+                            <span class="menu__item__details">
+                                <span class="menu__item__description">Et parmentier de pommes de terre</span>
+                                <span class="menu__item__price">35€</span>
+                            </span>                       
+                            <span class="menu__item__selected">
+                                <i class="fa-solid fa-circle-check menu__item__selected__icon"></i>
+                            </span>
+                        </span>
+                    </label>
+
+                    <label class="menu__item__label">
+                        <span class="menu__item">
+                            <input type="checkbox" class="menu__item__checkbox">
+                            <span class="menu__item__name">Pigeonneau d’Ille-et-Vilaine</span>
+                            <span class="menu__item__details">
+                                <span class="menu__item__description">Sur son lit de gnocchis aux légumes</span>
+                                <span class="menu__item__price">44€</span>
+                            </span>
+                            <span class="menu__item__selected">
+                                <i class="fa-solid fa-circle-check menu__item__selected__icon"></i>
+                            </span>
+                        </span>
+                    </label>
+
+
+                </section>
+
+                <section class="menu__category" id="desserts">
+
+                    <h2 class="menu__category-title">Desserts</h2>
+                    <div class="menu__category-title__underline"></div>
+
+                    <label class="menu__item__label">
+                        <span class="menu__item">
+                            <input type="checkbox" class="menu__item__checkbox">
+                            <span class="menu__item__name">Pétales de violettes glacés</span>
+                            <span class="menu__item__details">
+                                <span class="menu__item__description">Et purée de noisettes</span>
+                                <span class="menu__item__price">18€</span>
+                            </span>
+                            <span class="menu__item__selected">
+                                <i class="fa-solid fa-circle-check menu__item__selected__icon"></i>
+                            </span>
+                        </span>
+                    </label>
+
+                    <label class="menu__item__label">
+                        <span class="menu__item">
+                            <input type="checkbox" class="menu__item__checkbox">
+                            <span class="menu__item__name">Fondant au chocolat</span>
+                            <span class="menu__item__details">
+                                <span class="menu__item__description">Revisité</span>
+                                <span class="menu__item__price">22€</span>
+                            </span>
+                            <span class="menu__item__selected">
+                                <i class="fa-solid fa-circle-check menu__item__selected__icon"></i>
+                            </span>
+                        </span>
+                    </label>
+
+                    <label class="menu__item__label">
+                        <span class="menu__item">
+                            <input type="checkbox" class="menu__item__checkbox">
+                            <span class="menu__item__name">Millefeuille croustillant</span>
+                            <span class="menu__item__details">
+                                <span class="menu__item__description">Myrtilles et pâte d’amande</span>
+                                <span class="menu__item__price">23€</span>
+                            </span>
+                            <span class="menu__item__selected">
+                                <i class="fa-solid fa-circle-check menu__item__selected__icon"></i>
+                            </span>
+                        </span>
+                    </label>
+
+                </section>
+            </div>
+
+           <div class="menu__order">    
+                <button class="button menu__order__button">Commander</button>
+           </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <span class="footer__logo">ohmyfood</span>
+
+        <ul class="footer__list">
+
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                    <i class="footer__icon fa-solid fa-utensils"></i>
+                    <span class="footer__text">Proposer un restaurant</span>
+                </a>
+            </li>
+
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                    <i class="footer__icon fa-solid fa-handshake-angle"></i>
+                    <span class="footer__text">Devenir partenaire</span>
+                </a>
+            </li>
+
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                <span class="footer__text">Mentions légales</span>
+                </a>
+
+            </li>
+            <li class="footer__item">
+                <a href="mailto:contact@ohmyfood.fr" target="_blank" class="footer__link">
+                    <span class="footer__text">Contact</span>
+                </a>
+            </li>
+
+        </ul>
+        
+    </footer>
+
+</body>
+
+</html>
