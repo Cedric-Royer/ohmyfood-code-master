@@ -3,7 +3,9 @@
   --main-first-color: #9356DC;
   --main-second-color: #FF79DA;
   --main-third-color: #99E2D0;
-  --main-font-family: "Roboto";
+  --neutral-color: white;
+  --main-font-family: "Roboto", "sans-serif";
+  --title-and-logo-font-family: "Shrikhand", serif;
 }
 
 /****** General ***********/
@@ -14,7 +16,7 @@ body {
 }
 
 .main {
-  font-family: "Roboto";
+  font-family: var(--main-font-family);
 }
 
 a {
@@ -70,17 +72,16 @@ a {
   height: 50px;
   border-radius: 25px;
   border: none;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font-family);
   font-weight: 500;
   font-style: normal;
-  color: white;
+  color: var(--neutral-color);
   font-size: 16px;
   padding: 0 20px;
   margin: auto;
-  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .button:hover {
-  background-color: linear-gradient(193.33deg, var(--main-second-color) -11.44%, var(--main-first-color) 123.93%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
   opacity: 0.9;
   transform: translateY(-2px);
@@ -93,7 +94,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: var(--neutral-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,7 +215,7 @@ a {
   align-items: center;
 }
 .menu__headline .restaurant-name {
-  font-family: "Shrikhand", serif;
+  font-family: var(--title-and-logo-font-family);
   font-size: 28px;
   font-weight: 400;
   margin-top: 23px;
@@ -296,7 +297,7 @@ a {
   transition: width 1s ease-in-out 0.2s;
 }
 .menu__item__selected__icon {
-  color: white;
+  color: var(--neutral-color);
   font-size: 18px;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
@@ -334,7 +335,7 @@ a {
 .header {
   height: 63px;
   position: relative;
-  font-family: "Shrikhand", serif;
+  font-family: var(--title-and-logo-font-family);
   font-size: 30px;
   font-weight: 400;
   z-index: 1;
@@ -436,7 +437,7 @@ a {
   height: 24px;
   border-radius: 50%;
   background-color: var(--main-first-color);
-  color: white;
+  color: var(--neutral-color);
   position: absolute;
   left: -15px;
   display: flex;
@@ -476,7 +477,7 @@ a {
 .restaurants__card {
   width: 90%;
   height: 251px;
-  background-color: white;
+  background-color: var(--neutral-color);
   flex-direction: column;
   margin: 0 auto 30px auto;
   border-radius: 25px;
@@ -527,19 +528,19 @@ a {
 /****** Footer ***********/
 .footer {
   background-color: #353535;
-  color: white;
+  color: var(--neutral-color);
   padding: 22px 25px;
   margin-top: -40px;
 }
 .footer__logo {
-  font-family: "Shrikhand", serif;
+  font-family: var(--title-and-logo-font-family);
   font-size: 18px;
   font-weight: 400;
 }
 .footer__list {
   list-style-type: none;
   padding-left: 0;
-  font-family: "Roboto";
+  font-family: var(--main-font-family);
   margin-bottom: 0;
 }
 .footer__list .footer__item {
@@ -575,7 +576,10 @@ a {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .heart-checkbox {
+  .checkbox-container {
+    margin-left: 0;
+  }
+  .checkbox-container .heart-checkbox {
     margin-left: 30px;
   }
 }
