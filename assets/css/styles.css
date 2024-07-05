@@ -3,7 +3,7 @@
   --main-first-color: #9356DC;
   --main-second-color: #FF79DA;
   --main-third-color: #99E2D0;
-  --neutral-color: white;
+  --neutral-color: #FFFFFF;
   --main-font-family: "Roboto", "sans-serif";
   --title-and-logo-font-family: "Shrikhand", serif;
 }
@@ -241,7 +241,7 @@ a {
   width: 90%;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  background-color: #FFFFFF;
+  background-color: var(--neutral-color);
   height: 69px;
   display: flex;
   margin: auto;
